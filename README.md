@@ -52,7 +52,7 @@ clasp open
 ### Set Trigger
 
 1. open script editor: `clasp open`
-2. Run `createTimeTrikker` function on script editor
+2. Run `createTimeTrigger` function on script editor
 
 It will set cron job for the script
 

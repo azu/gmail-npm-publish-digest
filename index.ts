@@ -25,7 +25,7 @@ function fetchPublishedMails() {
 /**
  * Creates time triggers.
  */
-function createTimeTrikker() {
+function createTimeTrigger() {
     ScriptApp.newTrigger('main')
         .timeBased()
         .everyHours(FETCH_INTERVAL_HOURS)
