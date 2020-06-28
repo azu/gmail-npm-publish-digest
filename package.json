@@ -2,7 +2,7 @@
   "private": true,
   "name": "gmail-npm-publish-digest",
   "version": "1.0.0",
-  "description": "This Google App Scripts create digest mail of npm's \"Successfully published\" notification from your Gmail read mails.",
+  "description": "Google App Scripts create digest mail of npm's \"Successfully published\" notification from your Gmail read mails.",
   "main": "index.js",
   "scripts": {
     "open": "clasp open",
