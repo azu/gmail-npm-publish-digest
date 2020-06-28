@@ -20,7 +20,7 @@ email support@npmjs.com.
 npm loves you.
 ```
 
-This [Google Apps Script](https://developers.google.com/gsuite/aspects/appsscript) create summary mail within `<any>` minutes.
+This [Google Apps Script](https://developers.google.com/gsuite/aspects/appsscript) create summary mail every X hours.
 
 ## Installation
 
