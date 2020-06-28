@@ -58,8 +58,8 @@ It will set cron job for the script
 
 ## Configuration
 
-- `FETCH_INTERVAL_MINUTES`: `number` minutes
-    - Default: `6 * 60`
+- `FETCH_INTERVAL_HOURS`: Run `main` function every X hours
+    - Default: `6`
 
 ## Contributing
 

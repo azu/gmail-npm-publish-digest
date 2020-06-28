@@ -1,9 +1,9 @@
-// Interval minutes
-const FETCH_INTERVAL_MINUTES = 60 * 6;
+// Interval hours
+const FETCH_INTERVAL_HOURS = 6;
 
 function fetchPublishedMails() {
     const now = Math.floor(new Date().getTime() / 1000);
-    const timeTerm = now - (60 * FETCH_INTERVAL_MINUTES);
+    const timeTerm = now - (60 * 60 * FETCH_INTERVAL_HOURS);
     const strTerms = 'after:' + timeTerm + ' from:notifications@npmjs.com successfully published';
     const mailThreads = GmailApp.search(strTerms);
     const mailMessages = GmailApp.getMessagesForThreads(mailThreads);
@@ -23,12 +23,12 @@ function fetchPublishedMails() {
 }
 
 /**
- * Creates two time-driven triggers.
+ * Creates time triggers.
  */
 function createTimeTrikker() {
     ScriptApp.newTrigger('main')
         .timeBased()
-        .everyMinutes(FETCH_INTERVAL_MINUTES)
+        .everyHours(FETCH_INTERVAL_HOURS)
         .create();
 }
 
