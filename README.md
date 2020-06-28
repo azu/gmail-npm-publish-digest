@@ -38,6 +38,8 @@ git clone https://github.com/azu/gmail-npm-publish-digest
 cd gmail-npm-publish-digest
 # create .clasp.json
 clasp create --type standalone --title "gmail-npm-publish-digest"
+# Install Dependencies
+yarn install
 # Update script
 clasp push
 # Open script editor
