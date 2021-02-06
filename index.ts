@@ -4,7 +4,7 @@ const FETCH_INTERVAL_HOURS = 6;
 function fetchPublishedMails() {
     const now = Math.floor(new Date().getTime() / 1000);
     const timeTerm = now - (60 * 60 * FETCH_INTERVAL_HOURS);
-    const strTerms = 'after:' + timeTerm + ' from:notifications@npmjs.com successfully published';
+    const strTerms = 'after:' + timeTerm + ' from:support@npmjs.com successfully published';
     const mailThreads = GmailApp.search(strTerms);
     const mailMessages = GmailApp.getMessagesForThreads(mailThreads);
     if (mailMessages.length === 0) {
